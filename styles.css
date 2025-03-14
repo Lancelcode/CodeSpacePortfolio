@@ -1,0 +1,213 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2d466b;
+    color: #e6f1ff;
+}
+
+/* Navbar */
+.navbar {
+    padding: 15px;
+    background-color: #002669 !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #64ffda !important;
+    font-size: 18px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffffff !important;
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #0a192f, #112240);
+    padding: 60px 0;
+    text-align: center;
+    color: #64ffda;
+}
+
+/* Main Content */
+.container {
+    max-width: 1100px;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #3a86ff;
+    border: none;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #2563eb;
+    transform: scale(1.05);
+}
+
+/* Resume Button (Fixed to Bottom) */
+.resume-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #64ffda;
+    color: #0a192f;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.resume-btn:hover {
+    background-color: #3a86ff;
+    color: white;
+}
+
+/* About Section */
+.about-container {
+    text-align: center;
+    padding: 40px;
+}
+
+.about-container img {
+    width: 200px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+/* Projects */
+.card {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    background-color: #112240;
+    color: white;
+    border: none;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: #2563eb;
+}
+
+.card img {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* Contact Form */
+form {
+    background: #112240;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+form label {
+    color: #64ffda;
+}
+
+/* Footer */
+footer {
+    background-color: #112240;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Social Media Icons */
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode .navbar {
+    background-color: #1f1f1f !important;
+}
+
+.dark-mode .btn-primary {
+    background-color: #64ffda;
+    color: #253a59;
+}
+
+.dark-mode .btn-primary:hover {
+    background-color: #3a86ff;
+    color: white;
+}
+
+/* Light Mode */
+.light-mode {
+    background-color: #eef5ff; /* Softer, readable light blue */
+    color: #596679;
+}
+
+.light-mode .navbar {
+    background-color: #d0e2ff !important;
+}
+
+.light-mode .btn-primary {
+    background-color: #3a86ff;
+    color: white;
+}
+
+.light-mode .btn-primary:hover {
+    background-color: #2563eb;
+}
+
+/* Fix positioning for buttons */
+.fixed-buttons {
+    position: fixed;
+    top: 15px; 
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+/* Ensure the CV download button is fixed at the bottom */
+.fixed-buttons .resume-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #64ffda;
+    color: #0a192f;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.fixed-buttons .resume-btn:hover {
+    background-color: #3a86ff;
+    color: white;
+}
+
+.fixed-buttons .btn {
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #3a86ff;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.fixed-buttons .btn:hover {
+    transform: scale(1.05);
+    background-color: #2563eb;
+}
